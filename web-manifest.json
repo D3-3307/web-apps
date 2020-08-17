@@ -1,29 +1,29 @@
 [
   {
     "name": "app1-zepto",
-    "hash": "123",
-    "bundleName": "app.123.zip",
+    "hash": "436ab053190c62df1e96364c76ebfdfaf1488e9aadd658a27099eab7da284436",
+    "bundleName": "app.436ab053190c62df1e96364c76ebfdfaf1488e9aadd658a27099eab7da284436.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
   },
   {
     "name": "app2-angular",
-    "hash": "123456",
-    "bundleName": "app.123456.zip",
+    "hash": "5573e462346b1e980a45b732577fd4347dfb454581e8d7e235374633eacee148",
+    "bundleName": "app.5573e462346b1e980a45b732577fd4347dfb454581e8d7e235374633eacee148.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
   },
   {
     "name": "app3-vue",
-    "hash": "987654",
-    "bundleName": "app.987654.zip",
+    "hash": "2faf1a5724e608a8fc4d612ba664b9c0f8044f89cffef0ef38fc05c7a5725be0",
+    "bundleName": "app.2faf1a5724e608a8fc4d612ba664b9c0f8044f89cffef0ef38fc05c7a5725be0.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
   },
   {
     "name": "app4-react",
-    "hash": "654321",
-    "bundleName": "app.654321.zip",
+    "hash": "9a38b717e476ff577892847ef4c485ba134c0e9f3097486d2436167cf5280610",
+    "bundleName": "app.9a38b717e476ff577892847ef4c485ba134c0e9f3097486d2436167cf5280610.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
   }
