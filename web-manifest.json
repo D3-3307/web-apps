@@ -26,5 +26,12 @@
     "bundleName": "app.9a38b717e476ff577892847ef4c485ba134c0e9f3097486d2436167cf5280610.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
+  },
+  {
+    "name": "app5-jsbridge",
+    "hash": "672e07e236f0b11607144f5c2154990fd775f1830299f6e92da13929d3281228",
+    "bundleName": "app.672e07e236f0b11607144f5c2154990fd775f1830299f6e92da13929d3281228.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
   }
 ]
