@@ -1,1 +1,30 @@
-[{"name":"app1-zepto","hash":"123","bundleName":"app.123.zip","entry":"./index.html","host":"https://serverless-demo.vercel.app"}]
+[
+  {
+    "name": "app1-zepto",
+    "hash": "123",
+    "bundleName": "app.123.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
+  },
+  {
+    "name": "app2-angular",
+    "hash": "123456",
+    "bundleName": "app.123456.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
+  },
+  {
+    "name": "app3-vue",
+    "hash": "987654",
+    "bundleName": "app.987654.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
+  },
+  {
+    "name": "app4-react",
+    "hash": "654321",
+    "bundleName": "app.654321.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
+  }
+]
