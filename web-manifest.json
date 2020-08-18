@@ -33,5 +33,12 @@
     "bundleName": "app.672e07e236f0b11607144f5c2154990fd775f1830299f6e92da13929d3281228.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
+  },
+  {
+    "name": "app6-jd",
+    "hash": "app.33333333333333333",
+    "bundleName": "app.33333333333333333.zip",
+    "entry": "./index.html",
+    "host": "https://serverless-demo.vercel.app"
   }
 ]

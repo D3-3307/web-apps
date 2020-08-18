@@ -1,0 +1,143 @@
+
+<!-- saved from url=(0059)https://st.jingxi.com/_async_cookie.html?_t=1&_fromiframe=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+function $setCookie(name, value, expires, path, domain, secure) {  
+    //写入COOKIES  
+    var exp = new Date(), expires = arguments[2] || null, path = arguments[3] || "/", domain = arguments[4] || null, secure = arguments[5] || false;  
+    expires ? exp.setMinutes(exp.getMinutes() + parseInt(expires)) : "";  
+    document.cookie = name + '=' + escape(value) + ( expires ? (expires == 'Session' ? ';expires=Session' : (';expires=' + exp.toGMTString())) : '') + ( path ? ';path=' + path : '') + ( domain ? ';domain=' + domain : '') + ( secure ? ';secure' : '');  
+}  
+
+// 当前的根域名
+var basehost = location.host.match(/[^\.]+\.com/);
+if (basehost) {
+    basehost = basehost[0];
+} else {
+    basehost = location.host;
+}
+
+function doSetCookie (data) {
+    // var nowhash = location.hash.replace(/^#/, "");
+    if (data) {
+        // 试着解析一下，看看是不是json
+        try{
+            // nowhash = JSON.parse(decodeURIComponent(nowhash));
+            // 然后再写入白名单内的cookie
+            var cookienames = [{
+                n: "PPRD_P",
+                e: "4320"
+            }, {
+                n: "visitkey",
+                e: "518400"
+            }, {
+                n: "__wga",
+                e: "259200"
+            }, {
+                n: "__jdv",
+                e: "1440"
+            }, {
+                n: "__jda",
+                e: "1440"
+            }, {
+                n: "__jxjda",
+                e: "518400"
+            }, {
+                n: "__jx__jda",
+                e: "518400"
+            }, {
+                n: "_jdzt",
+                e: "4320"
+            }, {
+                n: "unpl",
+                e: "1440"
+            }, {
+                n: "wq_addr",
+                e: "999999"
+            }, {
+                n: "wxapp_type",
+                e: "Session"
+            }, {
+                n: "wxapp_openid",
+                e: "518400"
+            }, {
+                n: "pinStatus",
+                e: "4320"
+            }, {
+                n: "appkey",
+                e: "Session"
+            }, {
+                n: "customerinfo",
+                e: "Session"
+            }, {
+                n: "source",
+                e: "Session"
+            }, {
+                n: "buildtime",
+                e: "518400"
+            }, {
+                n: "__jdb",
+                e: "4320"
+            }, {
+                n: "_mkjdcn",
+                e: "4320"
+            }, {
+                n: "_mjds",
+                e: "4320"
+            }, {
+                n: "_mjdcl",
+                e: "4320"
+            }, {
+                n: "_mkjdcnsl",
+                e: "4320"
+            }, {
+                n: "jxsid_s_u",
+                e: "1440"
+            }, {
+                n: "jxsid_s_t",
+                e: "1440"
+            }];
+
+            for (var i in data) {
+                var _tkey = cookienames.filter(function (ceil) {return ceil.n == i});
+                if (_tkey && _tkey.length > 0) {
+                    // 存在
+                    // 那就打cookie吧
+                    $setCookie(i, data[i], _tkey[0].e, "/", basehost);
+                }
+            }
+            // location.hash = "";
+        }catch(e){}
+    }
+}
+
+// 监听hash变化
+// window.onhashchange = function () {
+//     // hash传名值对 {"aa":"bb"}
+//     // 获得当前的hash值
+//     doSetCookie();
+// }
+
+// doSetCookie();
+window.onmessage = function (e){
+    doSetCookie(e.data);
+}
+
+// 判断是否有cookie
+function judgeCookie () {
+    if (!document.cookie.trim()) {
+        // 不存在cookie，就要直接上报一下
+        window.parent.postMessage({
+            nocookie: false
+        },'*');
+    } else {
+        // 存在也返回一下
+        window.parent.postMessage({
+            nocookie: false
+        },'*');
+    }
+}
+judgeCookie();
+
+</script>
+
+</head><body></body></html>
