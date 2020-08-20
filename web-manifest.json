@@ -1,8 +1,8 @@
 [
   {
     "name": "app1-zepto",
-    "hash": "436ab053190c62df1e96364c76ebfdfaf1488e9aadd658a27099eab7da284436",
-    "bundleName": "app.436ab053190c62df1e96364c76ebfdfaf1488e9aadd658a27099eab7da284436.zip",
+    "hash": "7b719d111d5c6b3aaa7c1458b1573f44360ef280e1012ddf72463c7a63b764b4",
+    "bundleName": "app.7b719d111d5c6b3aaa7c1458b1573f44360ef280e1012ddf72463c7a63b764b4.zip",
     "entry": "./index.html",
     "host": "https://serverless-demo.vercel.app"
   },
